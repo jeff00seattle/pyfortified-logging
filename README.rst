@@ -10,7 +10,7 @@ content populated as dictionaries.
 Important Note
 ^^^^^^^^^^^^^^
 
-This Python project is a refactoring of `logging_mv_integrations <https://pypi.org/project/logging-mv-integrations/>`_
+This Python project is a refactoring of `logging_fortified <https://pypi.org/project/logging-fortified/>`_
 for the purpose of general usage intent.
 
 Work In Progress
@@ -32,22 +32,43 @@ Badges
 .. list-table::
     :stub-columns: 1
 
-    * - info
-        |license|
+    * - docs
+      - |docs| |license|
     * - package
       - |version| |supported-versions|
+
+
+.. |docs| image:: https://readthedocs.org/projects/logging-fortified/badge/?style=flat
+    :alt: Documentation Status
+    :target: http://logging-fortified.readthedocs.io
+
+.. |hits| image:: http://hits.dwyl.io/jeff00seattle/logging-fortified.svg
+    :alt: Hit Count
+    :target: http://hits.dwyl.io/jeff00seattle/logging-fortified
 
 .. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
     :alt: License Status
     :target: https://opensource.org/licenses/MIT
 
-.. |version| image:: https://img.shields.io/pypi/v/logging_mv_integrations.svg?style=flat
-    :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/logging_mv_integrations
+.. |travis| image:: https://travis-ci.org/jeff00seattle/logging-fortified.svg?branch=master
+    :alt: Travis-CI Build Status
+    :target: https://travis-ci.org/jeff00seattle/logging-fortified
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/logging-mv-integrations.svg?style=flat
+.. |coveralls| image:: https://coveralls.io/repos/jeff00seattle/logging-fortified/badge.svg?branch=master&service=github
+    :alt: Code Coverage Status
+    :target: https://coveralls.io/r/jeff00seattle/logging-fortified
+
+.. |requires| image:: https://requires.io/github/jeff00seattle/logging-fortified/requirements.svg?branch=master
+    :alt: Requirements Status
+    :target: https://requires.io/github/jeff00seattle/logging-fortified/requirements/?branch=master
+
+.. |version| image:: https://img.shields.io/pypi/v/logging_fortified.svg?style=flat
+    :alt: PyPI Package latest release
+    :target: https://pypi.python.org/pypi/logging_fortified
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/logging-fortified.svg?style=flat
     :alt: Supported versions
-    :target: https://pypi.python.org/pypi/logging-mv-integrations
+    :target: https://pypi.python.org/pypi/logging-fortified
 
 .. end-badges
 
@@ -143,7 +164,7 @@ Logging Format
 .. code-block:: python
 
     class LoggingFormat(object):
-        """Logging Format ENUM
+        """TUNE Logging Format ENUM
         """
         STANDARD = "standard"
         JSON = "json"
@@ -167,7 +188,7 @@ Logging Output
 .. code-block:: python
 
     class LoggingOutput(object):
-        """Logging Output ENUM
+        """Logging Format ENUM
         """
         STDOUT = "stdout"
         STDOUT_COLOR = "color"
@@ -203,66 +224,21 @@ Logging JSON Example Output
 
 .. code-block:: bash
 
-    $ make run-examples
+    $ python3 examples/example_logging_json.py
 
-    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "INFO", "name": "__main__", "version": "0.1.0", "message": "logging: info", "test": "__main__"}
-    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "NOTE", "name": "__main__", "version": "0.1.0", "message": "logging: note", "test": "__main__"}
-    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "WARNING", "name": "__main__", "version": "0.1.0", "message": "logging: warning", "test": "__main__"}
-    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "ERROR", "name": "__main__", "version": "0.1.0", "message": "logging: error", "test": "__main__"}
-    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "CRITICAL", "name": "__main__", "version": "0.1.0", "message": "logging: critical", "test": "__main__"}
-    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "ERROR", "name": "__main__", "version": "0.1.0", "message": "logging: exception", "exc_info": "NoneType: None", "test": "__main__"}
-
-    [
-        {
-            'asctime': '2018-05-11 05:41:39 -0700',
-            'levelname': 'INFO',
-            'message': 'logging: info',
-            'name': '__main__',
-            'test': '__main__',
-            'version': '0.1.0',
-        },
-        {
-            'asctime': '2018-05-11 05:41:39 -0700',
-            'levelname': 'NOTE',
-            'message': 'logging: note',
-            'name': '__main__',
-            'test': '__main__',
-            'version': '0.1.0',
-        },
-        {
-            'asctime': '2018-05-11 05:41:39 -0700',
-            'levelname': 'WARNING',
-            'message': 'logging: warning',
-            'name': '__main__',
-            'test': '__main__',
-            'version': '0.1.0',
-        },
-        {
-            'asctime': '2018-05-11 05:41:39 -0700',
-            'levelname': 'ERROR',
-            'message': 'logging: error',
-            'name': '__main__',
-            'test': '__main__',
-            'version': '0.1.0',
-        },
-        {
-            'asctime': '2018-05-11 05:41:39 -0700',
-            'levelname': 'CRITICAL',
-            'message': 'logging: critical',
-            'name': '__main__',
-            'test': '__main__',
-            'version': '0.1.0',
-        },
-        {
-            'asctime': '2018-05-11 05:41:39 -0700',
-            'exc_info': 'NoneType: None',
-            'levelname': 'ERROR',
-            'message': 'logging: exception',
-            'name': '__main__',
-            'test': '__main__',
-            'version': '0.1.0',
-        },
-    ]
+    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "INFO", "name": "__main__",
+    "version": "0.1.6", "message": "logging: info", "test": "__main__"}
+    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "NOTE", "name": "__main__",
+    "version": "0.1.6", "message": "logging: note", "test": "__main__"}
+    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "WARNING", "name": "__main__",
+    "version": "0.1.6", "message": "logging: warning", "test": "__main__"}
+    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "ERROR", "name": "__main__",
+    "version": "0.1.6", "message": "logging: error", "test": "__main__"}
+    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "CRITICAL", "name": "__main__",
+    "version": "0.1.6", "message": "logging: critical", "test": "__main__"}
+    {"asctime": "2018-05-11 05:41:39 -0700", "levelname": "ERROR", "name": "__main__",
+    "version": "0.1.6", "message": "logging: exception", "exc_info": "NoneType: None",
+    "test": "__main__"}
 
 
 Requirements

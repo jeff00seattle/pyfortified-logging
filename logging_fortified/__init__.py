@@ -3,7 +3,7 @@
 # @namespace logging_fortified
 
 __title__ = 'logging-fortified'
-__version__ = '0.1.1'
+__version__ = '0.1.3'
 __version_info__ = tuple(__version__.split('.'))
 __python_required_version__ = (3, 0)
 
