@@ -19,6 +19,7 @@ The following still needs to be performed for this Python project:
 - Unit-testing: This project will be switching over to using Python native Unit testing framework `unittest <https://docs.python.org/3/library/unittest.html>`_.
 - More concise documentation is required.
 - Travis CI
+- Badges
 
 
 ******
@@ -38,14 +39,6 @@ Badges
 .. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
     :alt: License Status
     :target: https://opensource.org/licenses/MIT
-
-.. |version| image:: https://img.shields.io/pypi/v/logging_fortified.svg?style=flat
-    :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/logging_fortified
-
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/logging-fortified.svg?style=flat
-    :alt: Supported versions
-    :target: https://pypi.python.org/pypi/logging-fortified
 
 .. end-badges
 
