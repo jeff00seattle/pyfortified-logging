@@ -7,8 +7,18 @@ This Python project is an extension of the native Python component `logging <htt
 providing more robust message formatting for standard and JSON logging output, and in addtion allowing for extra
 content populated as dictionaries.
 
-**Important Note:** This Python project is a refactoring of `logging_mv_integrations <https://pypi.org/project/logging-mv-integrations/>`_
+Important Note
+------------------------------------
+This Python project is a refactoring of `logging_mv_integrations <https://pypi.org/project/logging-mv-integrations/>`_
 for the purpose of general usage intent.
+
+Work In Progress
+------------------------------------
+The following still needs to be performed for this Python project:
+
+- Unit-testing: This project will be switching over to using Python native Unit testing framework `unittest <https://docs.python.org/3/library/unittest.html>`_.
+- More concise documentation is required.
+- Travis CI
 
 ************************************
 Badges
