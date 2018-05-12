@@ -1,19 +1,21 @@
 .. -*- mode: rst -*-
-#################
+
 logging-fortified
-#################
+-----------------
 
 This Python project is an extension of the native Python component `logging <https://docs.python.org/3/library/logging.html>`_
 providing more robust message formatting for standard and JSON logging output, and in addtion allowing for extra
 content populated as dictionaries.
 
 Important Note
---------------
+^^^^^^^^^^^^^^
+
 This Python project is a refactoring of `logging_mv_integrations <https://pypi.org/project/logging-mv-integrations/>`_
 for the purpose of general usage intent.
 
 Work In Progress
-----------------
+^^^^^^^^^^^^^^^^
+
 The following still needs to be performed for this Python project:
 
 - Unit-testing: This project will be switching over to using Python native Unit testing framework `unittest <https://docs.python.org/3/library/unittest.html>`_.
@@ -22,9 +24,8 @@ The following still needs to be performed for this Python project:
 - Badges
 
 
-******
 Badges
-******
+------
 
 .. start-badges
 
@@ -40,21 +41,27 @@ Badges
     :alt: License Status
     :target: https://opensource.org/licenses/MIT
 
+.. |version| image:: https://img.shields.io/pypi/v/logging_mv_integrations.svg?style=flat
+    :alt: PyPI Package latest release
+    :target: https://pypi.python.org/pypi/logging_mv_integrations
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/logging-mv-integrations.svg?style=flat
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/logging-mv-integrations
+
 .. end-badges
 
 
-*******
 Install
-*******
+-------
 
 .. code-block:: bash
 
     pip install logging_fortified
 
 
-************
 Architecture
-************
+------------
 
 ``logging-fortified`` is an extension of the `logging facility for Python <https://docs.python.org/3/library/logging.html>`_
 used for providing custom logger levels, format, and output.
@@ -65,7 +72,7 @@ used for providing custom logger levels, format, and output.
 
 
 Function: get_logger()
-======================
+----------------------
 
 .. code-block:: python
 
@@ -80,7 +87,7 @@ Function: get_logger()
 
 
 get_logger(): Parameters
-------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 +-----------------+-------------------------------------------------------------------------------------------------------------------------+
 | Parameter       | Purpose                                                                                                                 |
@@ -99,7 +106,7 @@ get_logger(): Parameters
 
 
 Logging Levels
---------------
+^^^^^^^^^^^^^^
 
 Same Python logging levels, including one additional level NOTE.
 
@@ -122,7 +129,7 @@ Same Python logging levels, including one additional level NOTE.
 
 
 Logging Format
---------------
+^^^^^^^^^^^^^^
 
 +------------+-------------------------------------------------------------------------------------------------------+
 | Format     | Purpose                                                                                               |
@@ -144,7 +151,7 @@ Logging Format
 
 
 Logging Output
---------------
+^^^^^^^^^^^^^^
 
 +--------------+----------------------------------------------------------------------------------------------+
 | Output       | Purpose                                                                                      |
@@ -168,7 +175,7 @@ Logging Output
 
 
 Logging JSON Format
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: python
 
@@ -192,7 +199,7 @@ Logging JSON Format
 
 
 Logging JSON Example Output
----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code-block:: bash
 
@@ -257,9 +264,9 @@ Logging JSON Example Output
         },
     ]
 
-************
+
 Requirements
-************
+------------
 
 ``logging-fortified`` module is built upon Python 3 and has dependencies upon
 several Python modules available within `Python Package Index PyPI <https://pypi.python.org/pypi>`_.
@@ -278,7 +285,7 @@ or
 
 
 Dependencies
-============
+^^^^^^^^^^^^
 
 - coloredlogs: https://pypi.python.org/pypi/coloredlogs
 - pprintpp: https://pypi.python.org/pypi/pprintpp
