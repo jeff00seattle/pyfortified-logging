@@ -267,18 +267,6 @@ run-core-examples:
 	$(PYTHON3) examples/core/example_core_logger_json_lexer.py
 	@echo "======================================================"
 
-coverage:
-	@echo "======================================================"
-	@echo py.test coverage
-	@echo "======================================================"
-	py.test --verbose --cov-report html --cov=$(PACKAGE_PREFIX) tests
-
-coverage-percent:
-	@echo "======================================================"
-	@echo py.test coverage percent
-	@echo "======================================================"
-	py.test --verbose --cov=$(PACKAGE_PREFIX) tests
-
 pypitest-register:
 	@echo "======================================================"
 	@echo pypitest-register $(PACKAGE)
