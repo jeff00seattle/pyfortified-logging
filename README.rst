@@ -20,9 +20,8 @@ The following still needs to be performed for this Python project:
 - More concise documentation is required.
 - Travis CI
 
-************************************
 Badges
-************************************
+------------------------------------
 
 .. start-badges
 
