@@ -10,7 +10,7 @@ content populated as dictionaries.
 Important Note
 ^^^^^^^^^^^^^^
 
-This Python project is a refactoring of `logging_fortified <https://pypi.org/project/logging-fortified/>`_
+This Python project is a refactoring of `logging-mv-integrations <https://pypi.org/project/logging-mv-integrations/>`_
 for the purpose of general usage intent.
 
 Work In Progress
