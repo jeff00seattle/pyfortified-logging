@@ -287,7 +287,7 @@ pypitest-register:
 
 pypitest-upload:
 	@echo "======================================================"
-	@echo pypitest-register $(PACKAGE)
+	@echo pypitest-upload $(PACKAGE)
 	@echo "======================================================"
 	$(PYTHON3) $(SETUP_FILE) sdist upload -r pypitest
 
@@ -299,7 +299,7 @@ pypi-register:
 
 pypi-upload:
 	@echo "======================================================"
-	@echo pypi-register $(PACKAGE)
+	@echo pypi-upload $(PACKAGE)
 	@echo "======================================================"
 	$(PYTHON3) -m pip install --upgrade -r requirements.txt
 	$(PYTHON3) $(SETUP_FILE) sdist bdist_wheel upload -r pypi
