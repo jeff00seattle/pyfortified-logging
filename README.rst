@@ -32,8 +32,6 @@ Badges
 
     * - info
         |license|
-    * - tests
-      - |travis|
     * - package
       - |version| |supported-versions|
 
