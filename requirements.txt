@@ -1,0 +1,13 @@
+coloredlogs>=7.3
+httpbin>=0.6.2
+python-json-logger>=0.1.8
+pprintpp>=0.3.0
+Pygments>=2.2.0
+pytest>=3.5.1
+pytest-cov>=2.5.1
+pytest-httpbin>=0.3.0
+pytest-mock>=1.10.0
+pytz>=2018.4
+safe-cast>=0.1.1
+tzlocal>=1.5.1
+wheel>=0.30.0
