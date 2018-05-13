@@ -1,7 +1,7 @@
 .. -*- mode: rst -*-
 
-logging-fortified
------------------
+pyfortified-logging
+-------------------
 
 This Python project is an extension of the native Python component `logging <https://docs.python.org/3/library/logging.html>`_
 providing more robust message formatting for standard and JSON logging output, and in addtion allowing for extra
