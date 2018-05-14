@@ -33,9 +33,9 @@ Badges
     :stub-columns: 1
 
     * - docs
-      - |docs| |license|
+      - |license|
     * - package
-      - |version| |supported-versions|
+      - |version|
 
 
 .. |docs| image:: https://readthedocs.org/projects/logging-fortified/badge/?style=flat
