@@ -32,11 +32,6 @@ Badges
 .. list-table::
     :stub-columns: 1
 
-    * - docs
-      - |license|
-    * - package
-      - |version|
-
 
 .. |docs| image:: https://readthedocs.org/projects/logging-fortified/badge/?style=flat
     :alt: Documentation Status
