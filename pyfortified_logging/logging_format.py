@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @namespace logging_fortified
+# @namespace pyfortified_logging
 
 
 # @brief Logging Format ENUM
 #
-# @namespace logging_fortified.LoggingFormat
+# @namespace pyfortified_logging.LoggingFormat
 class LoggingFormat(object):
     """Logging Format ENUM
     """

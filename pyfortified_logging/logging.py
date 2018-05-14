@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @namespace logging_fortified
+# @namespace pyfortified_logging
 
 import os
 import logging
@@ -58,9 +58,9 @@ def get_logger(
                 epoch_time_sec = int(time.time())
                 epoch_time_sec_ceil = int(math.ceil((epoch_time_sec + 10) / 10.0)) * 10
 
-                logger_filename = f"log_{epoch_time_sec_ceil}"
+                logger_filename = "log_{0}".format(epoch_time_sec_ceil)
 
-            logger_path = f"{logging_dir}/{logger_filename}.json"
+            logger_path = "{0}/{1}.json".format(logging_dir, logger_filename)
             if not os.path.isfile(logger_path):
                 open(logger_path, "w+")
 

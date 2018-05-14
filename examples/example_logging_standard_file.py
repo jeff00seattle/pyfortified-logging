@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @namespace logging_fortified
+# @namespace pyfortified_logging
 
 import logging
 from pprintpp import pprint
-from logging_fortified import (
+from pyfortified_logging import (
     LoggingFormat,
     LoggingOutput,
     get_logger,
@@ -27,7 +27,7 @@ log.error("logging: error", extra={'test': __name__})
 log.critical("logging: critical", extra={'test': __name__})
 log.exception("logging: exception", extra={'test': __name__})
 
-pprint(f"Logger file path: {log.logger_path}")
+pprint("Logger file path: {0}".format(log.logger_path))
 
 logger_fp = open(log.logger_path,'r')
 pprint(logger_fp.readlines())

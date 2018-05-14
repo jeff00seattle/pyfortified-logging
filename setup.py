@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @namespace logging_fortified
+# @namespace pyfortified_logging
 #
 
 from __future__ import with_statement
@@ -24,12 +24,12 @@ REQUIREMENTS = [
 ]
 
 PACKAGES = [
-    'logging_fortified',
-    'logging_fortified.support',
-    'logging_fortified.errors'
+    'pyfortified_logging',
+    'pyfortified_logging.support',
+    'pyfortified_logging.errors'
 ]
 
-with open('logging_fortified/__init__.py', 'r') as fd:
+with open('pyfortified_logging/__init__.py', 'r') as fd:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', fd.read(), re.MULTILINE).group(1)
 
 if not version:
@@ -62,19 +62,19 @@ with codecs.open('README.rst', 'r', 'utf-8') as f:
     readme = f.read()
 
 setup(
-    name='logging-fortified',
+    name='pyfortified-logging',
     version=version,
     description="Extension to Python `logging` functionality.",
     long_description=readme,
-    url='https://github.com/jeff00seattle/logging-fortified',
-    download_url='https://github.com/jeff00seattle/logging-fortified/archive/v{0}.tar.gz'.format(version),
-    keywords="logger logging fortified",
+    url='https://github.com/jeff00seattle/pyfortified-logging',
+    download_url='https://github.com/jeff00seattle/pyfortified-logging/archive/v{0}.tar.gz'.format(version),
+    keywords="pyfortified logging",
     license='MIT License',
     zip_safe=False,
     include_package_data=True,
     install_requires=REQUIREMENTS,
     packages=PACKAGES,
     package_data={'': ['LICENSE']},
-    package_dir={'logging-fortified': 'logging-fortified'},
+    package_dir={'pyfortified-logging': 'pyfortified-logging'},
     classifiers=CLASSIFIERS
 )
