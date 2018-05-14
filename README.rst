@@ -27,46 +27,6 @@ The following still needs to be performed for this Python project:
 Badges
 ------
 
-.. start-badges
-
-.. list-table::
-    :stub-columns: 1
-
-
-.. |docs| image:: https://readthedocs.org/projects/pyfortified-logging/badge/?style=flat
-    :alt: Documentation Status
-    :target: http://pyfortified-logging.readthedocs.io
-
-.. |hits| image:: http://hits.dwyl.io/jeff00seattle/pyfortified-logging.svg
-    :alt: Hit Count
-    :target: http://hits.dwyl.io/jeff00seattle/pyfortified-logging
-
-.. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
-    :alt: License Status
-    :target: https://opensource.org/licenses/MIT
-
-.. |travis| image:: https://travis-ci.org/jeff00seattle/pyfortified-logging.svg?branch=master
-    :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/jeff00seattle/pyfortified-logging
-
-.. |coveralls| image:: https://coveralls.io/repos/jeff00seattle/pyfortified-logging/badge.svg?branch=master&service=github
-    :alt: Code Coverage Status
-    :target: https://coveralls.io/r/jeff00seattle/pyfortified-logging
-
-.. |requires| image:: https://requires.io/github/jeff00seattle/pyfortified-logging/requirements.svg?branch=master
-    :alt: Requirements Status
-    :target: https://requires.io/github/jeff00seattle/pyfortified-logging/requirements/?branch=master
-
-.. |version| image:: https://img.shields.io/pypi/v/pyfortified_logging.svg?style=flat
-    :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/pyfortified_logging
-
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/pyfortified-logging.svg?style=flat
-    :alt: Supported versions
-    :target: https://pypi.python.org/pypi/pyfortified-logging
-
-.. end-badges
-
 
 Install
 -------
@@ -78,13 +38,6 @@ Install
 
 Architecture
 ------------
-
-``pyfortified-logging`` is an extension of the `logging facility for Python <https://docs.python.org/3/library/logging.html>`_
-used for providing custom logger levels, format, and output.
-
-.. image:: ./images/pyfortified_logging.png
-   :scale: 50 %
-   :alt: UML pyfortified-logging
 
 
 Function: get_logger()
