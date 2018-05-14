@@ -27,64 +27,17 @@ The following still needs to be performed for this Python project:
 Badges
 ------
 
-.. start-badges
-
-.. list-table::
-    :stub-columns: 1
-
-
-.. |docs| image:: https://readthedocs.org/projects/logging-fortified/badge/?style=flat
-    :alt: Documentation Status
-    :target: http://logging-fortified.readthedocs.io
-
-.. |hits| image:: http://hits.dwyl.io/jeff00seattle/logging-fortified.svg
-    :alt: Hit Count
-    :target: http://hits.dwyl.io/jeff00seattle/logging-fortified
-
-.. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
-    :alt: License Status
-    :target: https://opensource.org/licenses/MIT
-
-.. |travis| image:: https://travis-ci.org/jeff00seattle/logging-fortified.svg?branch=master
-    :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/jeff00seattle/logging-fortified
-
-.. |coveralls| image:: https://coveralls.io/repos/jeff00seattle/logging-fortified/badge.svg?branch=master&service=github
-    :alt: Code Coverage Status
-    :target: https://coveralls.io/r/jeff00seattle/logging-fortified
-
-.. |requires| image:: https://requires.io/github/jeff00seattle/logging-fortified/requirements.svg?branch=master
-    :alt: Requirements Status
-    :target: https://requires.io/github/jeff00seattle/logging-fortified/requirements/?branch=master
-
-.. |version| image:: https://img.shields.io/pypi/v/logging_fortified.svg?style=flat
-    :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/logging_fortified
-
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/logging-fortified.svg?style=flat
-    :alt: Supported versions
-    :target: https://pypi.python.org/pypi/logging-fortified
-
-.. end-badges
-
 
 Install
 -------
 
 .. code-block:: bash
 
-    pip install logging_fortified
+    pip install pyfortified_logging
 
 
 Architecture
 ------------
-
-``logging-fortified`` is an extension of the `logging facility for Python <https://docs.python.org/3/library/logging.html>`_
-used for providing custom logger levels, format, and output.
-
-.. image:: ./images/logging_fortified.png
-   :scale: 50 %
-   :alt: UML logging-fortified
 
 
 Function: get_logger()
@@ -196,7 +149,7 @@ Logging JSON Format
 .. code-block:: python
 
     import logging
-    from logging_fortified import (LoggingFormat, get_logger, __version__)
+    from pyfortified_logging import (LoggingFormat, get_logger, __version__)
 
     log = get_logger(
         logger_name=__name__,
@@ -239,7 +192,7 @@ Logging JSON Example Output
 Requirements
 ------------
 
-``logging-fortified`` module is built upon Python 3 and has dependencies upon
+``pyfortified-logging`` module is built upon Python 3 and has dependencies upon
 several Python modules available within `Python Package Index PyPI <https://pypi.python.org/pypi>`_.
 
 .. code-block:: bash

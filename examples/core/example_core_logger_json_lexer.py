@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @namespace logging_fortified
+# @namespace pyfortified_logging
 
 import sys
 from pygments.token import Error
-from logging_fortified import (LoggerJsonLexer)
+from pyfortified_logging import (LoggerJsonLexer)
 from pprintpp import pprint
 
 num = 10

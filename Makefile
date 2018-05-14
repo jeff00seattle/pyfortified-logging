@@ -5,10 +5,11 @@
 
 .PHONY: clean version build dist local-dev yapf pyflakes pylint
 
-PACKAGE := logging-fortified
-PACKAGE_PREFIX := logging_fortified
+PACKAGE := pyfortified-logging
+PACKAGE_PREFIX := pyfortified_logging
 
 PYTHON3 := $(shell which python3)
+PYTHON35 := $(shell which python3.5)
 
 PY_MODULES := pip setuptools pylint flake8 pprintpp pep8 requests six sphinx wheel python-dateutil
 
@@ -42,19 +43,7 @@ config:
 	@echo config
 	@echo "======================================================"
 	@echo PYTHON3 $(PYTHON3)
-
-# Install Python 3 via Homebrew.
-brew-python:
-	@echo "======================================================"
-	@echo brew-python
-	@echo "======================================================"
-	@echo $(shell which python3)
-	brew uninstall -f python3
-	@echo $(shell which python3)
-	brew update
-	brew install python3
-	@echo $(shell which python3)
-	$(PYTHON3) -m pip install --upgrade $(PY_MODULES)
+	@echo PYTHON3.5 $(PYTHON35)
 
 clean:
 	@echo "======================================================"
@@ -145,15 +134,26 @@ fresh: dist dist-update install
 register:
 	$(PYTHON3) $(SETUP_FILE) register
 
-local-dev: remove-package
+local-build: remove-package
 	@echo "======================================================"
-	@echo local-dev $(PACKAGE)
+	@echo local-build $(PACKAGE)
 	@echo "======================================================"
 	$(PYTHON3) -m pip install --upgrade freeze
 	$(PYTHON3) -m pip install --upgrade .
 	@echo "======================================================"
 	$(PYTHON3) -m pip freeze | grep $(PACKAGE)
 	@echo "======================================================"
+
+local-build-35: remove-package
+	@echo "======================================================"
+	@echo local-build-35 $(PACKAGE)
+	@echo "======================================================"
+	$(PYTHON35) -m pip install --upgrade freeze
+	$(PYTHON35) -m pip install --upgrade .
+	@echo "======================================================"
+	$(PYTHON35) -m pip freeze | grep $(PACKAGE)
+	@echo "======================================================"
+
 
 build: clean
 	@echo "======================================================"
@@ -231,7 +231,7 @@ list-package: site-packages
 	@echo "======================================================"
 	ls -al $(PYTHON3_SITE_PACKAGES)/$(PACKAGE_PREFIX)*
 
-run-examples:
+run-examples: local-build
 	@echo "======================================================"
 	@echo run-examples $(PACKAGE)
 	@echo "======================================================"
@@ -250,6 +250,29 @@ run-examples:
 	$(PYTHON3) examples/example_logging_standard_buffer.py
 	@echo "======================================================"
 	$(PYTHON3) examples/example_logging_standard_file.py
+	@echo "======================================================"
+	ls -al tmp/*.json
+	@echo "======================================================"
+
+run-examples-35: local-build-35
+	@echo "======================================================"
+	@echo run-examples-35 $(PACKAGE)
+	@echo "======================================================"
+	rm -fR tmp/*.json
+	@echo "======================================================"
+	$(PYTHON35) examples/example_logging_json.py
+	@echo "======================================================"
+	$(PYTHON35) examples/example_logging_json_buffer.py
+	@echo "======================================================"
+	$(PYTHON35) examples/example_logging_json_file.py
+	@echo "======================================================"
+	$(PYTHON35) examples/example_logging_json_stdout.py
+	@echo "======================================================"
+	$(PYTHON35) examples/example_logging_json_stdout_color.py
+	@echo "======================================================"
+	$(PYTHON35) examples/example_logging_standard_buffer.py
+	@echo "======================================================"
+	$(PYTHON35) examples/example_logging_standard_file.py
 	@echo "======================================================"
 	ls -al tmp/*.json
 	@echo "======================================================"
