@@ -33,37 +33,37 @@ Badges
     :stub-columns: 1
 
 
-.. |docs| image:: https://readthedocs.org/projects/logging-fortified/badge/?style=flat
+.. |docs| image:: https://readthedocs.org/projects/pyfortified-logging/badge/?style=flat
     :alt: Documentation Status
-    :target: http://logging-fortified.readthedocs.io
+    :target: http://pyfortified-logging.readthedocs.io
 
-.. |hits| image:: http://hits.dwyl.io/jeff00seattle/logging-fortified.svg
+.. |hits| image:: http://hits.dwyl.io/jeff00seattle/pyfortified-logging.svg
     :alt: Hit Count
-    :target: http://hits.dwyl.io/jeff00seattle/logging-fortified
+    :target: http://hits.dwyl.io/jeff00seattle/pyfortified-logging
 
 .. |license| image:: https://img.shields.io/badge/License-MIT-yellow.svg
     :alt: License Status
     :target: https://opensource.org/licenses/MIT
 
-.. |travis| image:: https://travis-ci.org/jeff00seattle/logging-fortified.svg?branch=master
+.. |travis| image:: https://travis-ci.org/jeff00seattle/pyfortified-logging.svg?branch=master
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/jeff00seattle/logging-fortified
+    :target: https://travis-ci.org/jeff00seattle/pyfortified-logging
 
-.. |coveralls| image:: https://coveralls.io/repos/jeff00seattle/logging-fortified/badge.svg?branch=master&service=github
+.. |coveralls| image:: https://coveralls.io/repos/jeff00seattle/pyfortified-logging/badge.svg?branch=master&service=github
     :alt: Code Coverage Status
-    :target: https://coveralls.io/r/jeff00seattle/logging-fortified
+    :target: https://coveralls.io/r/jeff00seattle/pyfortified-logging
 
-.. |requires| image:: https://requires.io/github/jeff00seattle/logging-fortified/requirements.svg?branch=master
+.. |requires| image:: https://requires.io/github/jeff00seattle/pyfortified-logging/requirements.svg?branch=master
     :alt: Requirements Status
-    :target: https://requires.io/github/jeff00seattle/logging-fortified/requirements/?branch=master
+    :target: https://requires.io/github/jeff00seattle/pyfortified-logging/requirements/?branch=master
 
-.. |version| image:: https://img.shields.io/pypi/v/logging_fortified.svg?style=flat
+.. |version| image:: https://img.shields.io/pypi/v/pyfortified_logging.svg?style=flat
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/logging_fortified
+    :target: https://pypi.python.org/pypi/pyfortified_logging
 
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/logging-fortified.svg?style=flat
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/pyfortified-logging.svg?style=flat
     :alt: Supported versions
-    :target: https://pypi.python.org/pypi/logging-fortified
+    :target: https://pypi.python.org/pypi/pyfortified-logging
 
 .. end-badges
 
@@ -73,18 +73,18 @@ Install
 
 .. code-block:: bash
 
-    pip install logging_fortified
+    pip install pyfortified_logging
 
 
 Architecture
 ------------
 
-``logging-fortified`` is an extension of the `logging facility for Python <https://docs.python.org/3/library/logging.html>`_
+``pyfortified-logging`` is an extension of the `logging facility for Python <https://docs.python.org/3/library/logging.html>`_
 used for providing custom logger levels, format, and output.
 
-.. image:: ./images/logging_fortified.png
+.. image:: ./images/pyfortified_logging.png
    :scale: 50 %
-   :alt: UML logging-fortified
+   :alt: UML pyfortified-logging
 
 
 Function: get_logger()
@@ -196,7 +196,7 @@ Logging JSON Format
 .. code-block:: python
 
     import logging
-    from logging_fortified import (LoggingFormat, get_logger, __version__)
+    from pyfortified_logging import (LoggingFormat, get_logger, __version__)
 
     log = get_logger(
         logger_name=__name__,
@@ -239,7 +239,7 @@ Logging JSON Example Output
 Requirements
 ------------
 
-``logging-fortified`` module is built upon Python 3 and has dependencies upon
+``pyfortified-logging`` module is built upon Python 3 and has dependencies upon
 several Python modules available within `Python Package Index PyPI <https://pypi.python.org/pypi>`_.
 
 .. code-block:: bash

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# @namespace logging_fortified
+# @namespace pyfortified_logging
 
 from pprintpp import pprint
 import logging
-from logging_fortified import (
+from pyfortified_logging import (
     LoggingFormat,
     LoggingOutput,
     get_logger,
