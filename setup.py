@@ -44,7 +44,7 @@ CLASSIFIERS = [
     #   3 - Alpha
     #   4 - Beta
     #   5 - Production/Stable
-    'Development Status :: 5 - Production/Stable',
+    'Development Status :: 3 - Alpha',
     'Intended Audience :: Developers',
     'Natural Language :: English',
     'License :: OSI Approved :: MIT License',

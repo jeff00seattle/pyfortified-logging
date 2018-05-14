@@ -154,7 +154,6 @@ local-build-35: remove-package
 	$(PYTHON35) -m pip freeze | grep $(PACKAGE)
 	@echo "======================================================"
 
-
 build: clean
 	@echo "======================================================"
 	@echo remove $(PACKAGE_PREFIX_WILDCARD) and $(PACKAGE_WILDCARD)
