@@ -215,5 +215,4 @@ Dependencies
 - pprintpp: https://pypi.python.org/pypi/pprintpp
 - python-json-logger: https://pypi.python.org/pypi/python-json-logger
 - Pygments: https://pypi.python.org/pypi/Pygments
-- safe-cast: https://pypi.python.org/pypi/safe-cast
 - wheel: https://pypi.python.org/pypi/wheel
