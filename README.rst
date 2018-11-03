@@ -7,11 +7,11 @@ This Python project is an extension of the native Python component `logging <htt
 providing more robust message formatting for standard and JSON logging output, and in addtion allowing for extra
 content populated as dictionaries.
 
-Important Note
-^^^^^^^^^^^^^^
+pypi.org
+^^^^^^^^
 
-This Python project is a refactoring of `logging-mv-integrations <https://pypi.org/project/logging-mv-integrations/>`_
-for the purpose of general usage intent.
+https://pypi.org/project/pyfortified-logging/
+
 
 Work In Progress
 ^^^^^^^^^^^^^^^^

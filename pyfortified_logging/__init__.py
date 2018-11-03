@@ -3,7 +3,7 @@
 # @namespace pyfortified_logging
 
 __title__ = 'pyfortified-logging'
-__version__ = '0.1.9'
+__version__ = '0.2.1'
 __version_info__ = tuple(__version__.split('.'))
 __python_required_version__ = (3, 0)
 
