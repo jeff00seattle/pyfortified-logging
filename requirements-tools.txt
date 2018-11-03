@@ -3,3 +3,9 @@ pep8
 pyflakes
 sphinx_rtd_theme
 yapf
+httpbin>=0.6.2
+pytest>=3.5.1
+pytest-cov>=2.5.1
+pytest-httpbin>=0.3.0
+pytest-mock>=1.10.0
+wheel>=0.30.0
